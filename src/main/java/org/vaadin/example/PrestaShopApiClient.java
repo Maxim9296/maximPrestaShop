@@ -24,19 +24,16 @@ public class PrestaShopApiClient {
         String fullUrl = baseUrl + "/api/" + resource + "?display=full"; // Costruisce URL completo
         return getRaw(fullUrl); // Chiama metodo per effettuare richiesta HTTP e leggere risposta
     }
-
     // Esegue una GET per una risorsa specifica tramite ID (es. product/id)
     public String getById(String resource, String id) throws IOException {
         String fullUrl = baseUrl + "/api/" + resource + "/" + id; // URL specifico per risorsa ID
         return getRaw(fullUrl);
     }
-
     // Ottiene lo schema XML per una risorsa, indicando il tipo di schema (es. blank, synopsis)
     public String getSchema(String resource, String schemaType) throws IOException {
         String fullUrl = baseUrl + "/api/" + resource + "?schema=" + schemaType; // URL per schema
         return getRaw(fullUrl);
     }
-
     // Metodo interno che esegue una GET su un URL completo e ritorna la risposta come stringa
     public String getRaw(String fullUrl) throws IOException {
         System.out.println("➡️ Chiamata GET a: " + fullUrl);
@@ -62,7 +59,6 @@ public class PrestaShopApiClient {
             throw new IOException("Errore API PrestaShop: " + responseCode);
         }
     }
-
     // Prepara una connessione HTTP per metodi diversi da GET (POST, PUT, DELETE)
     public HttpURLConnection prepareConnection(String endpoint, String method, boolean doOutput) throws IOException {
         String url = baseUrl + "/api/" + endpoint; // Costruisce URL completo per l’endpoint

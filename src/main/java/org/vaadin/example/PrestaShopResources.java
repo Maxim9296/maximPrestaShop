@@ -96,7 +96,7 @@ public enum PrestaShopResources {
         return endpoint;
     }
 
-    public String getSingularName() {
+   public String getSingularName() {
         return singularName;
     }
 

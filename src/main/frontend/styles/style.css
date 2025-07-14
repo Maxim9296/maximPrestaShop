@@ -1,0 +1,433 @@
+
+:host {
+    display: flex;                            /* Usa flexbox per disporre i figli in modo flessibile */
+    flex-direction: column;                   /* Dispone gli elementi in colonna */
+    align-items: center;                      /* Centra gli elementi orizzontalmente */
+    background-color: #A4BAB7;                /* Colore di sfondo azzurro/grigio */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Font principale */
+    padding: 20px;                            /* Spazio interno */
+    color: #fff;                              /* Colore del testo bianco */
+    box-sizing: border-box;                   /* Include padding e bordo nel calcolo della dimensione */
+}
+
+/* -------------------- TITOLO -------------------- */
+h1 {
+  font-family: 'Georgia', 'Times New Roman', serif;  /* Font elegante e classico */
+  font-size: 4rem;                                   /* Dimensione leggermente più grande */
+  font-weight: 900;                                  /* Grassetto extra per maggiore impatto */
+  line-height: 1.1;
+  letter-spacing: -1.5px;                           /* Lettere ancora più ravvicinate */
+  color: #2a2a2a;
+  text-transform: uppercase;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.15);         /* Ombra più pronunciata per profondità */
+  margin: 0 auto;
+  font-size: clamp(1.5rem, 5vw, 3rem);
+    line-height: 1.2;
+  max-width: fit-content;                           /* Dimensione contenuta */
+  cursor: pointer;                                  /* Se cliccabile come logo */
+  user-select: none;                                /* Impedisce la selezione del testo, tipico di un logo */
+  transition: color 0.3s ease, text-shadow 0.3s ease; /* Animazione al passaggio del mouse */
+  border: 3px solid #2a2a2a;       /* bordo spesso e scuro */
+    padding: 0.5rem 1.5rem;           /* spazio interno per far respirare il testo */
+    border-radius: 8px;               /* angoli arrotondati */
+    display: inline-block;            /* per adattare la larghezza al contenuto */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+h1:hover {
+  color: #606c38;                                  /* Cambia colore al passaggio per effetto interattivo */
+  text-shadow: 0 4px 6px rgba(30,144,255,0.5);    /* Ombra più evidente */
+}
+@keyframes moveh1 {
+    0% {
+      top: 0;
+    }
+    100% {
+      top: 20px;
+    }
+    }
+
+/* -------------------- FORM -------------------- */
+.form-container {
+    display: flex;                     /* Layout flessibile */
+    flex-wrap: wrap;                  /* Va a capo se non c’è spazio */
+    gap: 20px;                        /* Spazio tra i campi */
+    padding: 20px;                    /* Spazio interno */
+    border-radius: 10px;             /* Angoli arrotondati */
+    margin-bottom: 100px;             /* Spazio sotto il form */
+
+    margin: 0 auto;                  /* Centra orizzontalmente */
+    align-items: center;             /* Allineamento verticale */
+    justify-content: center;         /* Allineamento orizzontale */
+    text-align: center;              /* Testo centrato */
+    width: 50%;                      /* Larghezza relativa */
+}
+
+vaadin-text-field,
+vaadin-number-field,
+vaadin-combo-box,
+vaadin-upload {
+    flex: 1 1 200px;     /* Flex-grow, shrink, e base minima */
+    min-width: 200px;    /* Larghezza minima */
+}
+
+/* Etichette dei campi */
+vaadin-text-field::part(label),
+vaadin-number-field::part(label),
+vaadin-combo-box::part(label),
+vaadin-upload::part(label) {
+    color: rgb(2, 2, 2);         /* Quasi nero */
+    font-weight: bold;          /* Grassetto */
+    text-align: center;         /* Centrato */
+}
+
+/* Campi di input della for inserimento libri */
+#input-vaadin-text-field-17,
+#input-vaadin-text-field-13,
+#input-vaadin-number-field-34,
+#input-vaadin-integer-field-21,
+#input-vaadin-combo-box-30,
+#input-vaadin-text-field-25,
+#input-vaadin-text-field-9,
+#textarea-vaadin-text-area-38 {
+    background-color: #8ecae6;    /* Sfondo bianco */
+}
+
+/* Campi di input in generale */
+vaadin-text-field::part(input-field),
+vaadin-number-field::part(input-field),
+vaadin-combo-box::part(input-field) {
+    background-color: rgba(255, 255, 255, 0.1); /* Sfondo semitrasparente */
+    color: rgb(0, 0, 0);                        /* Testo nero */
+    text-align: center;                         /* Centrato */
+}
+
+/* -------------------- BOTTONI -------------------- */
+.button-container{
+
+                /* Layout flessibile */
+    justify-content: center;     /* Centra orizzontalmente */
+    gap: 15px;                   /* Spazio tra bottoni */
+
+}
+
+.barraAzioni {
+    display: flex;                /* Layout flessibile */
+    justify-content: center;     /* Centra orizzontalmente */
+    gap: 15px;                   /* Spazio tra bottoni */
+    margin-bottom: 20px;         /* Spazio sotto */
+    text-align: center;          /* Centrato */
+    margin: 0 auto;              /* Centra il contenitore */
+}
+
+.bottone-primario {
+    background-color: #2D3142;   /* Blu/grigio scuro */
+    color: #ffffff;              /* Bianco */
+    font-weight: bold;           /* Grassetto */
+    border-radius: 5px;          /* Angoli arrotondati */
+    padding: 0px 20px;          /* Spaziatura interna */
+    transition: background-color 0.3s ease; /* Transizione morbida */
+    text-align: center;          /* Testo centrato */
+    margin: 0 auto;              /* Centra */
+}
+
+.bottone-primario:hover {
+    background-color: #4F5D75;   /* Colore al passaggio mouse */
+    cursor: pointer;             /* Mano */
+}
+
+.bottone-modifica {
+ background-color: #2D3142;
+        border: none;
+        width:100%;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+}
+
+
+.bottone-modifica:hover {
+    background-color: #e0f0ff; /* Azzurrino chiaro */
+}
+.bottone-elimina {
+    background-color: #2D3142;
+           border: none;
+           width:100%;
+           cursor: pointer;
+           transition: background-color 0.3s ease;
+}
+.bottone-salva{
+width:50%;
+ background-color: #2D3142;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.bottone-elimina:hover {
+    background-color: #ffe0e0; /* Rosato chiaro */
+}
+/* -------------------- CONTENITORE LIBRI -------------------- */
+.contenitore-libri {
+overflow:visible;
+    display: flex;                /* Layout flessibile */
+    flex-wrap: wrap;
+   /* Va a capo su più righe */
+    justify-content: center;     /* Centra le card */
+    align-items: flex-start;     /* Allinea in alto */
+    gap: 5px;                   /* Spazio tra card */
+    width: 100%;                 /* Occupa tutta la larghezza */
+    max-width: 100%;           /* Larghezza massima */
+    margin: 0 auto;              /* Centra il contenitore */
+    box-sizing: border-box;
+   /* padding: 20px;*/
+    position: relative;          /* Per eventuale posizionamento assoluto interno */
+}
+
+/* -------------------- CARD LIBRO -------------------- */
+.bottoni-sopra{
+margin-top:20px;
+  display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 colonne */
+    gap: 10px;
+   /* margin: 0 auto;*/
+    justify-content: center;
+    align-items: center;
+
+    max-width: 112px;
+    max-height: 150px;
+    overflow: visible;
+}
+
+vaadin-upload {
+  --lumo-primary-color: #007bff; /* Cambia il colore principale (pulsanti, progress bar) */
+  --lumo-error-color: #dc3545;   /* Colore per gli errori */
+  --lumo-success-color: #28a745; /* Colore al termine dell’upload */
+  padding: 1rem;
+  border: 2px dashed #007bff;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  transition: all 0.3s ease;
+  width:100%;
+}
+
+vaadin-upload:hover {
+  background-color: #eef6ff;
+  border-color: #0056b3;
+}
+
+vaadin-upload::part(drop-label) {
+  color: #333;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+vaadin-upload::part(add-button) {
+  background-color: #007bff;
+  color: white;
+  border-radius: 4px;
+}
+
+vaadin-upload::part(add-button):hover {
+  background-color: #0056b3;
+}
+.card-libro {
+  flex: 0 0 350px;          /* larghezza fissa */
+  min-height: 500px;
+  padding: 20px;
+  margin: 0 5px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: rgba(45, 49, 66, 0.85);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+  position: relative;
+  border: 2px solid black;
+  z-index: 1;
+
+}
+
+/* effetto hover */
+.card-libro:hover {
+  transform: scaleX(1.25) scaleY(1.10); /* più larghezza che altezza */
+   z-index: 30;
+   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.7);
+
+  /* non cambiare larghezza direttamente */
+}
+
+/* descrizione nascosta */
+.descrizione-nascosta {
+  opacity: 0;
+  visibility: hidden;
+  max-height: 0px;
+
+  overflow: hidden;
+  margin-top: 10px;
+  padding: 0 8px;
+  background-color: rgba(255, 255, 255, 0.05);
+  color: #ddd;
+  font-size: 0.9rem;
+  text-align: center;
+  line-height: 1.3;
+
+  border-radius: 5px;
+  white-space: normal;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  transition: opacity 1.5s ease, visibility 0.8s ease, max-height 0.8s ease, padding 0.5s ease;
+}
+
+.card-libro:hover .descrizione-nascosta {
+  opacity: 1;
+  visibility: visible;
+ z-index:25;
+  max-height:350px;
+  max-weight:350px;
+  /*padding: 8px;*/
+
+
+}
+
+
+@keyframes rotazione {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* -------------------- BOTTONE CARRELLO -------------------- */
+.bottone-carrello {
+    background-color: #2D3142;
+        border: none;
+        width:50%;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+}
+
+.bottone-carrello:hover {
+    background-color: #344e41;
+
+}
+
+
+.rotating-logo {
+position: relative;
+     animation: moveSideToSide 5s linear infinite alternate;
+}
+.rotating-logo:hover{
+animation: rotazione 0.7s linear infinite;
+}
+@keyframes moveSideToSide {
+    0% {
+      left: 0;
+
+    }
+    100% {
+      left: 150px;
+
+    }
+
+    }
+.ciccio{
+background:#4a4e69; /* sfumatura */
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+margin: 0 auto;
+}
+.ciccio:hover{
+transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    background: linear-gradient(135deg, #009fd9, #006b96);}
+    .ciccio:active{
+    transform: scale(0.98);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);}
+        .ciccio2{
+        margin:0 auto;
+        }
+        .mostra{
+        background:#2D3142; /* sfumatura */
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 8px;
+            cursor: pointer;
+            box-shadow: 0 4px 14px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease;
+        margin: 0 auto;
+
+        }
+       .contenitore-meteo{
+       position: fixed; /* oppure absolute */
+         top: 20px;       /* distanza dall'alto */
+         right: 20px;
+background: linear-gradient(135deg, #87ceeb, #f0f8ff); /* cielo azzurro */
+  color: #333;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 15px 20px;
+  border-radius: 8px;
+  width: 290px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  user-select: none;
+
+       }
+       .met{
+       position: fixed; /* oppure absolute */
+                top: 80px;       /* distanza dall'alto */
+                right: 20px;
+       background: linear-gradient(135deg, #87ceeb, #f0f8ff); /* cielo azzurro */
+         color: #333;
+         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+         padding: 15px 20px;
+         border-radius: 8px;
+         width: 290px;
+         box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+         user-select: none;
+
+       }
+       .ora {
+       position: fixed; /* oppure absolute */
+         top: 20px;       /* distanza dall'alto */
+         right: 350px;
+         background: linear-gradient(135deg, #87ceeb, #f0f8ff);
+       linear-gradient(135deg, #87ceeb, #f0f8ff); /* cielo azzurro */
+         color: #333;
+         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+         padding: 15px 20px;
+         border-radius: 8px;
+         width: 100px;
+         box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+         user-select: none;
+         font-weight: 600;
+         font-size: 1rem;
+         margin-bottom: 8px;
+         color: #555;
+       }
+       dialog::part(content) {
+         all: unset; /* Rimuove tutti gli stili di default */
+         display: block;
+         background: white;
+         color: black;
+         padding: 1rem;
+         border-radius: 8px;
+         box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+       }
+       .cerca{
+
+       margin:0 auto;
+       }
