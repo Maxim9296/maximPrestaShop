@@ -64,17 +64,12 @@ public class PrestaShopwrapper {
     private Stock stock;
     private Store store;
     private Supplier supplier;
-    private SupplyOrderDetail supplyOrderDetail;
-    private SupplyOrderHistory supplyOrderHistory;
-    private SupplyOrderReceiptHistory supplyOrderReceiptHistory;
-    private SupplyOrderState supplyOrderState;
-    private SupplyOrder supplyOrder;
     private Tag tag;
     private TaxRuleGroup taxRuleGroup;
     private TaxRule taxRule;
     private Tax tax;
     private TranslatedConfiguration translatedConfiguration;
-    private WarehouseProductLocation warehouseProductLocation;
+
     private Warehouse warehouse;
     private WeightRange weightRange;
     private Zone zone;
@@ -243,20 +238,6 @@ public class PrestaShopwrapper {
     public Supplier getSupplier() { return supplier; }
     public void setSupplier(Supplier supplier) { this.supplier = supplier; }
 
-    public SupplyOrderDetail getSupplyOrderDetail() { return supplyOrderDetail; }
-    public void setSupplyOrderDetail(SupplyOrderDetail supplyOrderDetail) { this.supplyOrderDetail = supplyOrderDetail; }
-
-    public SupplyOrderHistory getSupplyOrderHistory() { return supplyOrderHistory; }
-    public void setSupplyOrderHistory(SupplyOrderHistory supplyOrderHistory) { this.supplyOrderHistory = supplyOrderHistory; }
-
-    public SupplyOrderReceiptHistory getSupplyOrderReceiptHistory() { return supplyOrderReceiptHistory; }
-    public void setSupplyOrderReceiptHistory(SupplyOrderReceiptHistory supplyOrderReceiptHistory) { this.supplyOrderReceiptHistory = supplyOrderReceiptHistory; }
-
-    public SupplyOrderState getSupplyOrderState() { return supplyOrderState; }
-    public void setSupplyOrderState(SupplyOrderState supplyOrderState) { this.supplyOrderState = supplyOrderState; }
-
-    public SupplyOrder getSupplyOrder() { return supplyOrder; }
-    public void setSupplyOrder(SupplyOrder supplyOrder) { this.supplyOrder = supplyOrder; }
 
     public Tag getTag() { return tag; }
     public void setTag(Tag tag) { this.tag = tag; }
@@ -273,8 +254,6 @@ public class PrestaShopwrapper {
     public TranslatedConfiguration getTranslatedConfiguration() { return translatedConfiguration; }
     public void setTranslatedConfiguration(TranslatedConfiguration translatedConfiguration) { this.translatedConfiguration = translatedConfiguration; }
 
-    public WarehouseProductLocation getWarehouseProductLocation() { return warehouseProductLocation; }
-    public void setWarehouseProductLocation(WarehouseProductLocation warehouseProductLocation) { this.warehouseProductLocation = warehouseProductLocation; }
 
     public Warehouse getWarehouse() { return warehouse; }
     public void setWarehouse(Warehouse warehouse) { this.warehouse = warehouse; }
