@@ -13,10 +13,10 @@ public class Shop {
     private Integer idCategory;
 
     @XmlElement
-    private boolean active;
+    private String active;
 
     @XmlElement
-    private boolean deleted;
+    private String deleted;
 
     @XmlElement(required = true)
     private String name;
@@ -45,19 +45,19 @@ public class Shop {
         this.idCategory = idCategory;
     }
 
-    public boolean isActive() {
+    public String isActive() {
         return active;
     }
 
-    public void setActive(boolean active) {
+    public void setActive(String active) {
         this.active = active;
     }
 
-    public boolean isDeleted() {
+    public String isDeleted() {
         return deleted;
     }
 
-    public void setDeleted(boolean deleted) {
+    public void setDeleted(String deleted) {
         this.deleted = deleted;
     }
 

@@ -16,7 +16,7 @@ public class Guest {
     private Integer idWebBrowser;
 
     @XmlElement(name = "javascript")
-    private Boolean javascript;
+    private String javascript;
 
     @XmlElement(name = "screen_resolution_x")
     private Integer screenResolutionX;
@@ -28,28 +28,28 @@ public class Guest {
     private Integer screenColor;
 
     @XmlElement(name = "sun_java")
-    private Boolean sunJava;
+    private String sunJava;
 
     @XmlElement(name = "adobe_flash")
-    private Boolean adobeFlash;
+    private String adobeFlash;
 
     @XmlElement(name = "adobe_director")
-    private Boolean adobeDirector;
+    private String adobeDirector;
 
     @XmlElement(name = "apple_quicktime")
-    private Boolean appleQuicktime;
+    private String appleQuicktime;
 
     @XmlElement(name = "real_player")
-    private Boolean realPlayer;
+    private String realPlayer;
 
     @XmlElement(name = "windows_media")
-    private Boolean windowsMedia;
+    private String windowsMedia;
 
     @XmlElement(name = "accept_language")
     private String acceptLanguage;
 
     @XmlElement(name = "mobile_theme")
-    private Boolean mobileTheme;
+    private String mobileTheme;
 
     // === Getters and setters ===
 
@@ -77,11 +77,11 @@ public class Guest {
         this.idWebBrowser = idWebBrowser;
     }
 
-    public Boolean getJavascript() {
+    public String getJavascript() {
         return javascript;
     }
 
-    public void setJavascript(Boolean javascript) {
+    public void setJavascript(String javascript) {
         this.javascript = javascript;
     }
 
@@ -109,51 +109,51 @@ public class Guest {
         this.screenColor = screenColor;
     }
 
-    public Boolean getSunJava() {
+    public String getSunJava() {
         return sunJava;
     }
 
-    public void setSunJava(Boolean sunJava) {
+    public void setSunJava(String sunJava) {
         this.sunJava = sunJava;
     }
 
-    public Boolean getAdobeFlash() {
+    public String getAdobeFlash() {
         return adobeFlash;
     }
 
-    public void setAdobeFlash(Boolean adobeFlash) {
+    public void setAdobeFlash(String adobeFlash) {
         this.adobeFlash = adobeFlash;
     }
 
-    public Boolean getAdobeDirector() {
+    public String getAdobeDirector() {
         return adobeDirector;
     }
 
-    public void setAdobeDirector(Boolean adobeDirector) {
+    public void setAdobeDirector(String adobeDirector) {
         this.adobeDirector = adobeDirector;
     }
 
-    public Boolean getAppleQuicktime() {
+    public String getAppleQuicktime() {
         return appleQuicktime;
     }
 
-    public void setAppleQuicktime(Boolean appleQuicktime) {
+    public void setAppleQuicktime(String appleQuicktime) {
         this.appleQuicktime = appleQuicktime;
     }
 
-    public Boolean getRealPlayer() {
+    public String getRealPlayer() {
         return realPlayer;
     }
 
-    public void setRealPlayer(Boolean realPlayer) {
+    public void setRealPlayer(String realPlayer) {
         this.realPlayer = realPlayer;
     }
 
-    public Boolean getWindowsMedia() {
+    public String getWindowsMedia() {
         return windowsMedia;
     }
 
-    public void setWindowsMedia(Boolean windowsMedia) {
+    public void setWindowsMedia(String windowsMedia) {
         this.windowsMedia = windowsMedia;
     }
 
@@ -165,11 +165,11 @@ public class Guest {
         this.acceptLanguage = acceptLanguage;
     }
 
-    public Boolean getMobileTheme() {
+    public String getMobileTheme() {
         return mobileTheme;
     }
 
-    public void setMobileTheme(Boolean mobileTheme) {
+    public void setMobileTheme(String mobileTheme) {
         this.mobileTheme = mobileTheme;
     }
 }

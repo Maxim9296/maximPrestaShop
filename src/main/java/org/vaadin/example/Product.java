@@ -69,7 +69,7 @@ public class Product {
     private BigDecimal weight;
 
     @XmlElement(name = "quantity_discount")
-    private Boolean quantityDiscount;
+    private String quantityDiscount;
 
     @XmlElement(name = "ean13")
     private String ean13;
@@ -84,13 +84,13 @@ public class Product {
     private String mpn;
 
     @XmlElement(name = "cache_is_pack")
-    private Boolean cacheIsPack;
+    private String cacheIsPack;
 
     @XmlElement(name = "cache_has_attachments")
-    private Boolean cacheHasAttachments;
+    private String cacheHasAttachments;
 
     @XmlElement(name = "is_virtual")
-    private Boolean isVirtual;
+    private String isVirtual;
 
     @XmlElement(name = "state")
     private Integer state;
@@ -110,10 +110,10 @@ public class Product {
     private String productType;
 
     @XmlElement(name = "on_sale")
-    private Boolean onSale;
+    private String onSale;
 
     @XmlElement(name = "online_only")
-    private Boolean onlineOnly;
+    private String onlineOnly;
 
     @XmlElement(name = "ecotax")
     private BigDecimal ecotax;
@@ -125,7 +125,7 @@ public class Product {
     private Integer lowStockThreshold;
 
     @XmlElement(name = "low_stock_alert")
-    private Boolean lowStockAlert;
+    private String lowStockAlert;
 
     @XmlElement(name = "price", required = true)
     private BigDecimal price;
@@ -155,7 +155,7 @@ public class Product {
     private Integer uploadableFiles;
 
     @XmlElement(name = "active")
-    private Boolean active;
+    private String active;
 
     @XmlElement(name = "redirect_type")
     private String redirectType;
@@ -164,28 +164,28 @@ public class Product {
     private Integer idTypeRedirected;
 
     @XmlElement(name = "available_for_order")
-    private Boolean availableForOrder;
+    private String availableForOrder;
 
     @XmlElement(name = "available_date")
     private String availableDate;
 
     @XmlElement(name = "show_condition")
-    private Boolean showCondition;
+    private String showCondition;
 
     @XmlElement(name = "condition")
     private String condition;
 
     @XmlElement(name = "show_price")
-    private Boolean showPrice;
+    private String showPrice;
 
     @XmlElement(name = "indexed")
-    private Boolean indexed;
+    private String indexed;
 
     @XmlElement(name = "visibility")
     private String visibility;
 
     @XmlElement(name = "advanced_stock_management")
-    private Boolean advancedStockManagement;
+    private String advancedStockManagement;
 
     @XmlElement(name = "date_add")
     private String dateAdd;
@@ -528,11 +528,11 @@ public class Product {
         this.weight = weight;
     }
 
-    public Boolean getQuantityDiscount() {
+    public String getQuantityDiscount() {
         return quantityDiscount;
     }
 
-    public void setQuantityDiscount(Boolean quantityDiscount) {
+    public void setQuantityDiscount(String quantityDiscount) {
         this.quantityDiscount = quantityDiscount;
     }
 
@@ -568,27 +568,27 @@ public class Product {
         this.mpn = mpn;
     }
 
-    public Boolean getCacheIsPack() {
+    public String getCacheIsPack() {
         return cacheIsPack;
     }
 
-    public void setCacheIsPack(Boolean cacheIsPack) {
+    public void setCacheIsPack(String cacheIsPack) {
         this.cacheIsPack = cacheIsPack;
     }
 
-    public Boolean getCacheHasAttachments() {
+    public String getCacheHasAttachments() {
         return cacheHasAttachments;
     }
 
-    public void setCacheHasAttachments(Boolean cacheHasAttachments) {
+    public void setCacheHasAttachments(String cacheHasAttachments) {
         this.cacheHasAttachments = cacheHasAttachments;
     }
 
-    public Boolean getIsVirtual() {
+    public String getIsVirtual() {
         return isVirtual;
     }
 
-    public void setIsVirtual(Boolean isVirtual) {
+    public void setIsVirtual(String isVirtual) {
         this.isVirtual = isVirtual;
     }
 
@@ -632,19 +632,19 @@ public class Product {
         this.productType = productType;
     }
 
-    public Boolean getOnSale() {
+    public String getOnSale() {
         return onSale;
     }
 
-    public void setOnSale(Boolean onSale) {
+    public void setOnSale(String onSale) {
         this.onSale = onSale;
     }
 
-    public Boolean getOnlineOnly() {
+    public String getOnlineOnly() {
         return onlineOnly;
     }
 
-    public void setOnlineOnly(Boolean onlineOnly) {
+    public void setOnlineOnly(String onlineOnly) {
         this.onlineOnly = onlineOnly;
     }
 
@@ -672,11 +672,11 @@ public class Product {
         this.lowStockThreshold = lowStockThreshold;
     }
 
-    public Boolean getLowStockAlert() {
+    public String getLowStockAlert() {
         return lowStockAlert;
     }
 
-    public void setLowStockAlert(Boolean lowStockAlert) {
+    public void setLowStockAlert(String lowStockAlert) {
         this.lowStockAlert = lowStockAlert;
     }
 
@@ -752,11 +752,11 @@ public class Product {
         this.uploadableFiles = uploadableFiles;
     }
 
-    public Boolean getActive() {
+    public String getActive() {
         return active;
     }
 
-    public void setActive(Boolean active) {
+    public void setActive(String active) {
         this.active = active;
     }
 
@@ -776,11 +776,11 @@ public class Product {
         this.idTypeRedirected = idTypeRedirected;
     }
 
-    public Boolean getAvailableForOrder() {
+    public String getAvailableForOrder() {
         return availableForOrder;
     }
 
-    public void setAvailableForOrder(Boolean availableForOrder) {
+    public void setAvailableForOrder(String availableForOrder) {
         this.availableForOrder = availableForOrder;
     }
 
@@ -792,11 +792,11 @@ public class Product {
         this.availableDate = availableDate;
     }
 
-    public Boolean getShowCondition() {
+    public String getShowCondition() {
         return showCondition;
     }
 
-    public void setShowCondition(Boolean showCondition) {
+    public void setShowCondition(String showCondition) {
         this.showCondition = showCondition;
     }
 
@@ -808,19 +808,19 @@ public class Product {
         this.condition = condition;
     }
 
-    public Boolean getShowPrice() {
+    public String getShowPrice() {
         return showPrice;
     }
 
-    public void setShowPrice(Boolean showPrice) {
+    public void setShowPrice(String showPrice) {
         this.showPrice = showPrice;
     }
 
-    public Boolean getIndexed() {
+    public String getIndexed() {
         return indexed;
     }
 
-    public void setIndexed(Boolean indexed) {
+    public void setIndexed(String indexed) {
         this.indexed = indexed;
     }
 
@@ -832,11 +832,11 @@ public class Product {
         this.visibility = visibility;
     }
 
-    public Boolean getAdvancedStockManagement() {
+    public String getAdvancedStockManagement() {
         return advancedStockManagement;
     }
 
-    public void setAdvancedStockManagement(Boolean advancedStockManagement) {
+    public void setAdvancedStockManagement(String advancedStockManagement) {
         this.advancedStockManagement = advancedStockManagement;
     }
 

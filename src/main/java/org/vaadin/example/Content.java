@@ -16,10 +16,10 @@ public class Content {
     private Integer position;
 
     @XmlElement(name = "indexation")
-    private Boolean indexation;
+    private String indexation;
 
     @XmlElement(name = "active")
-    private Boolean active;
+    private String active;
 
     @XmlElementWrapper(name = "meta_description")
     @XmlElement(name = "language")
@@ -59,19 +59,19 @@ public class Content {
         this.position = position;
     }
 
-    public Boolean getIndexation() {
+    public String getIndexation() {
         return indexation;
     }
 
-    public void setIndexation(Boolean indexation) {
+    public void setIndexation(String indexation) {
         this.indexation = indexation;
     }
 
-    public Boolean getActive() {
+    public String getActive() {
         return active;
     }
 
-    public void setActive(Boolean active) {
+    public void setActive(String active) {
         this.active = active;
     }
 

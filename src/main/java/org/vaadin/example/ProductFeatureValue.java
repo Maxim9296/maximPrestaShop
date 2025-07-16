@@ -11,7 +11,7 @@ public class ProductFeatureValue {
     private Integer idFeature;
 
     @XmlElement(name = "custom")
-    private Boolean custom;
+    private String custom;
 
     @XmlElement(name = "position")
     private Integer position;
@@ -30,11 +30,11 @@ public class ProductFeatureValue {
         this.idFeature = idFeature;
     }
 
-    public Boolean getCustom() {
+    public String getCustom() {
         return custom;
     }
 
-    public void setCustom(Boolean custom) {
+    public void setCustom(String custom) {
         this.custom = custom;
     }
 

@@ -16,19 +16,19 @@ public class ImageType {
     private Integer height;
 
     @XmlElement(name = "categories")
-    private Boolean categories;
+    private String categories;
 
     @XmlElement(name = "products")
-    private Boolean products;
+    private String products;
 
     @XmlElement(name = "manufacturers")
-    private Boolean manufacturers;
+    private String manufacturers;
 
     @XmlElement(name = "suppliers")
-    private Boolean suppliers;
+    private String suppliers;
 
     @XmlElement(name = "stores")
-    private Boolean stores;
+    private String stores;
 
     // === Getters and setters ===
 
@@ -56,43 +56,43 @@ public class ImageType {
         this.height = height;
     }
 
-    public Boolean getCategories() {
+    public String getCategories() {
         return categories;
     }
 
-    public void setCategories(Boolean categories) {
+    public void setCategories(String categories) {
         this.categories = categories;
     }
 
-    public Boolean getProducts() {
+    public String getProducts() {
         return products;
     }
 
-    public void setProducts(Boolean products) {
+    public void setProducts(String products) {
         this.products = products;
     }
 
-    public Boolean getManufacturers() {
+    public String getManufacturers() {
         return manufacturers;
     }
 
-    public void setManufacturers(Boolean manufacturers) {
+    public void setManufacturers(String manufacturers) {
         this.manufacturers = manufacturers;
     }
 
-    public Boolean getSuppliers() {
+    public String getSuppliers() {
         return suppliers;
     }
 
-    public void setSuppliers(Boolean suppliers) {
+    public void setSuppliers(String suppliers) {
         this.suppliers = suppliers;
     }
 
-    public Boolean getStores() {
+    public String getStores() {
         return stores;
     }
 
-    public void setStores(Boolean stores) {
+    public void setStores(String stores) {
         this.stores = stores;
     }
 }

@@ -10,10 +10,10 @@ public class ShopUrl {
     private Integer idShop;
 
     @XmlElement
-    private boolean active;
+    private String active;
 
     @XmlElement
-    private boolean main;
+    private String main;
 
     @XmlElement(required = true)
     private String domain;
@@ -37,19 +37,19 @@ public class ShopUrl {
         this.idShop = idShop;
     }
 
-    public boolean isActive() {
+    public String isActive() {
         return active;
     }
 
-    public void setActive(boolean active) {
+    public void setActive(String active) {
         this.active = active;
     }
 
-    public boolean isMain() {
+    public String isMain() {
         return main;
     }
 
-    public void setMain(boolean main) {
+    public void setMain(String main) {
         this.main = main;
     }
 

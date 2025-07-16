@@ -14,13 +14,13 @@ public class ProductCustomizationField {
     private Integer type;
 
     @XmlElement(name = "required", required = true)
-    private Boolean required;
+    private String required;
 
     @XmlElement(name = "is_module")
-    private Boolean isModule;
+    private String isModule;
 
     @XmlElement(name = "is_deleted")
-    private Boolean isDeleted;
+    private String isDeleted;
 
     @XmlElementWrapper(name = "name", required = true)
     @XmlElement(name = "language")
@@ -44,27 +44,27 @@ public class ProductCustomizationField {
         this.type = type;
     }
 
-    public Boolean getRequired() {
+    public String getRequired() {
         return required;
     }
 
-    public void setRequired(Boolean required) {
+    public void setRequired(String required) {
         this.required = required;
     }
 
-    public Boolean getIsModule() {
+    public String getIsModule() {
         return isModule;
     }
 
-    public void setIsModule(Boolean isModule) {
+    public void setIsModule(String isModule) {
         this.isModule = isModule;
     }
 
-    public Boolean getIsDeleted() {
+    public String getIsDeleted() {
         return isDeleted;
     }
 
-    public void setIsDeleted(Boolean isDeleted) {
+    public void setIsDeleted(String isDeleted) {
         this.isDeleted = isDeleted;
     }
 

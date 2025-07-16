@@ -10,7 +10,7 @@ public class Zone {
     private String name;
 
     @XmlElement(name = "active")
-    private Boolean active;
+    private String active;
 
     // Getters e setters
 
@@ -22,11 +22,11 @@ public class Zone {
         this.name = name;
     }
 
-    public Boolean getActive() {
+    public String getActive() {
         return active;
     }
 
-    public void setActive(Boolean active) {
+    public void setActive(String active) {
         this.active = active;
     }
 }

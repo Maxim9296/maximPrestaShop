@@ -11,10 +11,10 @@ public class TaxRuleGroup {
     private String name;
 
     @XmlElement(name = "active")
-    private Boolean active;
+    private String active;
 
     @XmlElement(name = "deleted")
-    private Boolean deleted;
+    private String deleted;
 
     @XmlElement(name = "date_add")
     private String dateAdd;
@@ -32,19 +32,19 @@ public class TaxRuleGroup {
         this.name = name;
     }
 
-    public Boolean getActive() {
+    public String getActive() {
         return active;
     }
 
-    public void setActive(Boolean active) {
+    public void setActive(String active) {
         this.active = active;
     }
 
-    public Boolean getDeleted() {
+    public String getDeleted() {
         return deleted;
     }
 
-    public void setDeleted(Boolean deleted) {
+    public void setDeleted(String deleted) {
         this.deleted = deleted;
     }
 

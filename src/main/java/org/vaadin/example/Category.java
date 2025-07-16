@@ -16,13 +16,13 @@ public class Category {
     private Integer nbProductsRecursive;
 
     @XmlElement(name = "active")
-    private Boolean active;
+    private String active;
 
     @XmlElement(name = "id_shop_default")
     private Integer idShopDefault;
 
     @XmlElement(name = "is_root_category")
-    private Boolean isRootCategory;
+    private String isRootCategory;
 
     @XmlElement(name = "position")
     private Integer position;
@@ -89,11 +89,11 @@ public class Category {
         this.nbProductsRecursive = nbProductsRecursive;
     }
 
-    public Boolean getActive() {
+    public String getActive() {
         return active;
     }
 
-    public void setActive(Boolean active) {
+    public void setActive(String active) {
         this.active = active;
     }
 
@@ -105,11 +105,11 @@ public class Category {
         this.idShopDefault = idShopDefault;
     }
 
-    public Boolean getIsRootCategory() {
+    public String getIsRootCategory() {
         return isRootCategory;
     }
 
-    public void setIsRootCategory(Boolean isRootCategory) {
+    public void setIsRootCategory(String isRootCategory) {
         this.isRootCategory = isRootCategory;
     }
 

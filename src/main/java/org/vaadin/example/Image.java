@@ -96,22 +96,22 @@ public class Image {
         private String href;
 
         @XmlAttribute
-        private boolean get;
+        private String get;
 
         @XmlAttribute
-        private boolean put;
+        private String put;
 
         @XmlAttribute
-        private boolean post;
+        private String post;
 
         @XmlAttribute
-        private boolean patch;
+        private String patch;
 
         @XmlAttribute
-        private boolean delete;
+        private String delete;
 
         @XmlAttribute
-        private boolean head;
+        private String head;
 
         @XmlAttribute(name = "upload_allowed_mimetypes")
         private String uploadAllowedMimetypes;
@@ -126,51 +126,51 @@ public class Image {
             this.href = href;
         }
 
-        public boolean isGet() {
+        public String isGet() {
             return get;
         }
 
-        public void setGet(boolean get) {
+        public void setGet(String get) {
             this.get = get;
         }
 
-        public boolean isPut() {
+        public String isPut() {
             return put;
         }
 
-        public void setPut(boolean put) {
+        public void setPut(String put) {
             this.put = put;
         }
 
-        public boolean isPost() {
+        public String isPost() {
             return post;
         }
 
-        public void setPost(boolean post) {
+        public void setPost(String post) {
             this.post = post;
         }
 
-        public boolean isPatch() {
+        public String isPatch() {
             return patch;
         }
 
-        public void setPatch(boolean patch) {
+        public void setPatch(String patch) {
             this.patch = patch;
         }
 
-        public boolean isDelete() {
+        public String isDelete() {
             return delete;
         }
 
-        public void setDelete(boolean delete) {
+        public void setDelete(String delete) {
             this.delete = delete;
         }
 
-        public boolean isHead() {
+        public String isHead() {
             return head;
         }
 
-        public void setHead(boolean head) {
+        public void setHead(String head) {
             this.head = head;
         }
 

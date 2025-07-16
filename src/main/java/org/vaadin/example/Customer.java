@@ -26,7 +26,7 @@ public class Customer {
     private String secureKey;
 
     @XmlElement(name = "deleted")
-    private Boolean deleted;
+    private String deleted;
 
     @XmlElement(name = "passwd", required = true)
     private String passwd;
@@ -47,10 +47,10 @@ public class Customer {
     private String birthday;
 
     @XmlElement(name = "newsletter")
-    private Boolean newsletter;
+    private String newsletter;
 
     @XmlElement(name = "optin")
-    private Boolean optin;
+    private String optin;
 
     @XmlElement(name = "website")
     private String website;
@@ -68,7 +68,7 @@ public class Customer {
     private Double outstandingAllowAmount;
 
     @XmlElement(name = "show_public_prices")
-    private Boolean showPublicPrices;
+    private String showPublicPrices;
 
     @XmlElement(name = "id_risk")
     private Integer idRisk;
@@ -77,13 +77,13 @@ public class Customer {
     private Integer maxPaymentDays;
 
     @XmlElement(name = "active")
-    private Boolean active;
+    private String active;
 
     @XmlElement(name = "note")
     private String note;
 
     @XmlElement(name = "is_guest")
-    private Boolean isGuest;
+    private String isGuest;
 
     @XmlElement(name = "id_shop")
     private Long idShop;
@@ -156,11 +156,11 @@ public class Customer {
         this.secureKey = secureKey;
     }
 
-    public Boolean getDeleted() {
+    public String getDeleted() {
         return deleted;
     }
 
-    public void setDeleted(Boolean deleted) {
+    public void setDeleted(String deleted) {
         this.deleted = deleted;
     }
 
@@ -212,19 +212,19 @@ public class Customer {
         this.birthday = birthday;
     }
 
-    public Boolean getNewsletter() {
+    public String getNewsletter() {
         return newsletter;
     }
 
-    public void setNewsletter(Boolean newsletter) {
+    public void setNewsletter(String newsletter) {
         this.newsletter = newsletter;
     }
 
-    public Boolean getOptin() {
+    public String getOptin() {
         return optin;
     }
 
-    public void setOptin(Boolean optin) {
+    public void setOptin(String optin) {
         this.optin = optin;
     }
 
@@ -268,11 +268,11 @@ public class Customer {
         this.outstandingAllowAmount = outstandingAllowAmount;
     }
 
-    public Boolean getShowPublicPrices() {
+    public String getShowPublicPrices() {
         return showPublicPrices;
     }
 
-    public void setShowPublicPrices(Boolean showPublicPrices) {
+    public void setShowPublicPrices(String showPublicPrices) {
         this.showPublicPrices = showPublicPrices;
     }
 
@@ -292,11 +292,11 @@ public class Customer {
         this.maxPaymentDays = maxPaymentDays;
     }
 
-    public Boolean getActive() {
+    public String getActive() {
         return active;
     }
 
-    public void setActive(Boolean active) {
+    public void setActive(String active) {
         this.active = active;
     }
 
@@ -308,11 +308,11 @@ public class Customer {
         this.note = note;
     }
 
-    public Boolean getIsGuest() {
+    public String getIsGuest() {
         return isGuest;
     }
 
-    public void setIsGuest(Boolean isGuest) {
+    public void setIsGuest(String isGuest) {
         this.isGuest = isGuest;
     }
 

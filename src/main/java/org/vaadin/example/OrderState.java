@@ -7,43 +7,43 @@ import javax.xml.bind.annotation.*;
 public class OrderState {
 
     @XmlElement(name = "unremovable")
-    private Boolean unremovable;
+    private String unremovable;
 
     @XmlElement(name = "delivery")
-    private Boolean delivery;
+    private String delivery;
 
     @XmlElement(name = "hidden")
-    private Boolean hidden;
+    private String hidden;
 
     @XmlElement(name = "send_email")
-    private Boolean sendEmail;
+    private String sendEmail;
 
     @XmlElement(name = "module_name")
     private String moduleName;
 
     @XmlElement(name = "invoice")
-    private Boolean invoice;
+    private String invoice;
 
     @XmlElement(name = "color")
     private String color;
 
     @XmlElement(name = "logable")
-    private Boolean logable;
+    private String logable;
 
     @XmlElement(name = "shipped")
-    private Boolean shipped;
+    private String shipped;
 
     @XmlElement(name = "paid")
-    private Boolean paid;
+    private String paid;
 
     @XmlElement(name = "pdf_delivery")
-    private Boolean pdfDelivery;
+    private String pdfDelivery;
 
     @XmlElement(name = "pdf_invoice")
-    private Boolean pdfInvoice;
+    private String pdfInvoice;
 
     @XmlElement(name = "deleted")
-    private Boolean deleted;
+    private String deleted;
 
     @XmlElement(name = "name", required = true)
     private Language name;
@@ -53,35 +53,35 @@ public class OrderState {
 
     // Getters e setters
 
-    public Boolean getUnremovable() {
+    public String getUnremovable() {
         return unremovable;
     }
 
-    public void setUnremovable(Boolean unremovable) {
+    public void setUnremovable(String unremovable) {
         this.unremovable = unremovable;
     }
 
-    public Boolean getDelivery() {
+    public String getDelivery() {
         return delivery;
     }
 
-    public void setDelivery(Boolean delivery) {
+    public void setDelivery(String delivery) {
         this.delivery = delivery;
     }
 
-    public Boolean getHidden() {
+    public String getHidden() {
         return hidden;
     }
 
-    public void setHidden(Boolean hidden) {
+    public void setHidden(String hidden) {
         this.hidden = hidden;
     }
 
-    public Boolean getSendEmail() {
+    public String getSendEmail() {
         return sendEmail;
     }
 
-    public void setSendEmail(Boolean sendEmail) {
+    public void setSendEmail(String sendEmail) {
         this.sendEmail = sendEmail;
     }
 
@@ -93,11 +93,11 @@ public class OrderState {
         this.moduleName = moduleName;
     }
 
-    public Boolean getInvoice() {
+    public String getInvoice() {
         return invoice;
     }
 
-    public void setInvoice(Boolean invoice) {
+    public void setInvoice(String invoice) {
         this.invoice = invoice;
     }
 
@@ -109,51 +109,51 @@ public class OrderState {
         this.color = color;
     }
 
-    public Boolean getLogable() {
+    public String getLogable() {
         return logable;
     }
 
-    public void setLogable(Boolean logable) {
+    public void setLogable(String logable) {
         this.logable = logable;
     }
 
-    public Boolean getShipped() {
+    public String getShipped() {
         return shipped;
     }
 
-    public void setShipped(Boolean shipped) {
+    public void setShipped(String shipped) {
         this.shipped = shipped;
     }
 
-    public Boolean getPaid() {
+    public String getPaid() {
         return paid;
     }
 
-    public void setPaid(Boolean paid) {
+    public void setPaid(String paid) {
         this.paid = paid;
     }
 
-    public Boolean getPdfDelivery() {
+    public String getPdfDelivery() {
         return pdfDelivery;
     }
 
-    public void setPdfDelivery(Boolean pdfDelivery) {
+    public void setPdfDelivery(String pdfDelivery) {
         this.pdfDelivery = pdfDelivery;
     }
 
-    public Boolean getPdfInvoice() {
+    public String getPdfInvoice() {
         return pdfInvoice;
     }
 
-    public void setPdfInvoice(Boolean pdfInvoice) {
+    public void setPdfInvoice(String pdfInvoice) {
         this.pdfInvoice = pdfInvoice;
     }
 
-    public Boolean getDeleted() {
+    public String getDeleted() {
         return deleted;
     }
 
-    public void setDeleted(Boolean deleted) {
+    public void setDeleted(String deleted) {
         this.deleted = deleted;
     }
 

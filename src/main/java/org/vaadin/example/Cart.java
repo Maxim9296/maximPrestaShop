@@ -36,16 +36,16 @@ public class Cart {
     private Long idCarrier;
 
     @XmlElement(name = "recyclable")
-    private Boolean recyclable;
+    private String recyclable;
 
     @XmlElement(name = "gift")
-    private Boolean gift;
+    private String gift;
 
     @XmlElement(name = "gift_message")
     private String giftMessage;
 
     @XmlElement(name = "mobile_theme")
-    private Boolean mobileTheme;
+    private String mobileTheme;
 
     @XmlElement(name = "delivery_option")
     private String deliveryOption;
@@ -54,7 +54,7 @@ public class Cart {
     private String secureKey;
 
     @XmlElement(name = "allow_seperated_package")
-    private Boolean allowSeperatedPackage;
+    private String allowSeperatedPackage;
 
     @XmlElement(name = "date_add")
     private Date dateAdd;
@@ -132,17 +132,17 @@ public class Cart {
     public Long getIdCarrier() { return idCarrier; }
     public void setIdCarrier(Long idCarrier) { this.idCarrier = idCarrier; }
 
-    public Boolean getRecyclable() { return recyclable; }
-    public void setRecyclable(Boolean recyclable) { this.recyclable = recyclable; }
+    public String getRecyclable() { return recyclable; }
+    public void setRecyclable(String recyclable) { this.recyclable = recyclable; }
 
-    public Boolean getGift() { return gift; }
-    public void setGift(Boolean gift) { this.gift = gift; }
+    public String getGift() { return gift; }
+    public void setGift(String gift) { this.gift = gift; }
 
     public String getGiftMessage() { return giftMessage; }
     public void setGiftMessage(String giftMessage) { this.giftMessage = giftMessage; }
 
-    public Boolean getMobileTheme() { return mobileTheme; }
-    public void setMobileTheme(Boolean mobileTheme) { this.mobileTheme = mobileTheme; }
+    public String getMobileTheme() { return mobileTheme; }
+    public void setMobileTheme(String mobileTheme) { this.mobileTheme = mobileTheme; }
 
     public String getDeliveryOption() { return deliveryOption; }
     public void setDeliveryOption(String deliveryOption) { this.deliveryOption = deliveryOption; }
@@ -150,8 +150,8 @@ public class Cart {
     public String getSecureKey() { return secureKey; }
     public void setSecureKey(String secureKey) { this.secureKey = secureKey; }
 
-    public Boolean getAllowSeperatedPackage() { return allowSeperatedPackage; }
-    public void setAllowSeperatedPackage(Boolean allowSeperatedPackage) { this.allowSeperatedPackage = allowSeperatedPackage; }
+    public String getAllowSeperatedPackage() { return allowSeperatedPackage; }
+    public void setAllowSeperatedPackage(String allowSeperatedPackage) { this.allowSeperatedPackage = allowSeperatedPackage; }
 
     public Date getDateAdd() { return dateAdd; }
     public void setDateAdd(Date dateAdd) { this.dateAdd = dateAdd; }

@@ -30,7 +30,7 @@ public class CartRule {
     private Integer priority;
 
     @XmlElement(name = "partial_use")
-    private Boolean partialUse;
+    private String partialUse;
 
     @XmlElement(name = "code")
     private String code;
@@ -39,34 +39,34 @@ public class CartRule {
     private Double minimumAmount;
 
     @XmlElement(name = "minimum_amount_tax")
-    private Boolean minimumAmountTax;
+    private String minimumAmountTax;
 
     @XmlElement(name = "minimum_amount_currency")
     private Integer minimumAmountCurrency;
 
     @XmlElement(name = "minimum_amount_shipping")
-    private Boolean minimumAmountShipping;
+    private String minimumAmountShipping;
 
     @XmlElement(name = "country_restriction")
-    private Boolean countryRestriction;
+    private String countryRestriction;
 
     @XmlElement(name = "carrier_restriction")
-    private Boolean carrierRestriction;
+    private String carrierRestriction;
 
     @XmlElement(name = "group_restriction")
-    private Boolean groupRestriction;
+    private String groupRestriction;
 
     @XmlElement(name = "cart_rule_restriction")
-    private Boolean cartRuleRestriction;
+    private String cartRuleRestriction;
 
     @XmlElement(name = "product_restriction")
-    private Boolean productRestriction;
+    private String productRestriction;
 
     @XmlElement(name = "shop_restriction")
-    private Boolean shopRestriction;
+    private String shopRestriction;
 
     @XmlElement(name = "free_shipping")
-    private Boolean freeShipping;
+    private String freeShipping;
 
     @XmlElement(name = "reduction_percent")
     private Double reductionPercent;
@@ -75,7 +75,7 @@ public class CartRule {
     private Double reductionAmount;
 
     @XmlElement(name = "reduction_tax")
-    private Boolean reductionTax;
+    private String reductionTax;
 
     @XmlElement(name = "reduction_currency")
     private Integer reductionCurrency;
@@ -84,7 +84,7 @@ public class CartRule {
     private Integer reductionProduct;
 
     @XmlElement(name = "reduction_exclude_special")
-    private Boolean reductionExcludeSpecial;
+    private String reductionExcludeSpecial;
 
     @XmlElement(name = "gift_product")
     private Integer giftProduct;
@@ -93,10 +93,10 @@ public class CartRule {
     private Integer giftProductAttribute;
 
     @XmlElement(name = "highlight")
-    private Boolean highlight;
+    private String highlight;
 
     @XmlElement(name = "active")
-    private Boolean active;
+    private String active;
 
     @XmlElement(name = "date_add")
     private String dateAdd;
@@ -166,11 +166,11 @@ public class CartRule {
         this.priority = priority;
     }
 
-    public Boolean getPartialUse() {
+    public String getPartialUse() {
         return partialUse;
     }
 
-    public void setPartialUse(Boolean partialUse) {
+    public void setPartialUse(String partialUse) {
         this.partialUse = partialUse;
     }
 
@@ -190,11 +190,11 @@ public class CartRule {
         this.minimumAmount = minimumAmount;
     }
 
-    public Boolean getMinimumAmountTax() {
+    public String getMinimumAmountTax() {
         return minimumAmountTax;
     }
 
-    public void setMinimumAmountTax(Boolean minimumAmountTax) {
+    public void setMinimumAmountTax(String minimumAmountTax) {
         this.minimumAmountTax = minimumAmountTax;
     }
 
@@ -206,67 +206,67 @@ public class CartRule {
         this.minimumAmountCurrency = minimumAmountCurrency;
     }
 
-    public Boolean getMinimumAmountShipping() {
+    public String getMinimumAmountShipping() {
         return minimumAmountShipping;
     }
 
-    public void setMinimumAmountShipping(Boolean minimumAmountShipping) {
+    public void setMinimumAmountShipping(String minimumAmountShipping) {
         this.minimumAmountShipping = minimumAmountShipping;
     }
 
-    public Boolean getCountryRestriction() {
+    public String getCountryRestriction() {
         return countryRestriction;
     }
 
-    public void setCountryRestriction(Boolean countryRestriction) {
+    public void setCountryRestriction(String countryRestriction) {
         this.countryRestriction = countryRestriction;
     }
 
-    public Boolean getCarrierRestriction() {
+    public String getCarrierRestriction() {
         return carrierRestriction;
     }
 
-    public void setCarrierRestriction(Boolean carrierRestriction) {
+    public void setCarrierRestriction(String carrierRestriction) {
         this.carrierRestriction = carrierRestriction;
     }
 
-    public Boolean getGroupRestriction() {
+    public String getGroupRestriction() {
         return groupRestriction;
     }
 
-    public void setGroupRestriction(Boolean groupRestriction) {
+    public void setGroupRestriction(String groupRestriction) {
         this.groupRestriction = groupRestriction;
     }
 
-    public Boolean getCartRuleRestriction() {
+    public String getCartRuleRestriction() {
         return cartRuleRestriction;
     }
 
-    public void setCartRuleRestriction(Boolean cartRuleRestriction) {
+    public void setCartRuleRestriction(String cartRuleRestriction) {
         this.cartRuleRestriction = cartRuleRestriction;
     }
 
-    public Boolean getProductRestriction() {
+    public String getProductRestriction() {
         return productRestriction;
     }
 
-    public void setProductRestriction(Boolean productRestriction) {
+    public void setProductRestriction(String productRestriction) {
         this.productRestriction = productRestriction;
     }
 
-    public Boolean getShopRestriction() {
+    public String getShopRestriction() {
         return shopRestriction;
     }
 
-    public void setShopRestriction(Boolean shopRestriction) {
+    public void setShopRestriction(String shopRestriction) {
         this.shopRestriction = shopRestriction;
     }
 
-    public Boolean getFreeShipping() {
+    public String getFreeShipping() {
         return freeShipping;
     }
 
-    public void setFreeShipping(Boolean freeShipping) {
+    public void setFreeShipping(String freeShipping) {
         this.freeShipping = freeShipping;
     }
 
@@ -286,11 +286,11 @@ public class CartRule {
         this.reductionAmount = reductionAmount;
     }
 
-    public Boolean getReductionTax() {
+    public String getReductionTax() {
         return reductionTax;
     }
 
-    public void setReductionTax(Boolean reductionTax) {
+    public void setReductionTax(String reductionTax) {
         this.reductionTax = reductionTax;
     }
 
@@ -310,11 +310,11 @@ public class CartRule {
         this.reductionProduct = reductionProduct;
     }
 
-    public Boolean getReductionExcludeSpecial() {
+    public String getReductionExcludeSpecial() {
         return reductionExcludeSpecial;
     }
 
-    public void setReductionExcludeSpecial(Boolean reductionExcludeSpecial) {
+    public void setReductionExcludeSpecial(String reductionExcludeSpecial) {
         this.reductionExcludeSpecial = reductionExcludeSpecial;
     }
 
@@ -334,19 +334,19 @@ public class CartRule {
         this.giftProductAttribute = giftProductAttribute;
     }
 
-    public Boolean getHighlight() {
+    public String getHighlight() {
         return highlight;
     }
 
-    public void setHighlight(Boolean highlight) {
+    public void setHighlight(String highlight) {
         this.highlight = highlight;
     }
 
-    public Boolean getActive() {
+    public String getActive() {
         return active;
     }
 
-    public void setActive(Boolean active) {
+    public void setActive(String active) {
         this.active = active;
     }
 

@@ -37,7 +37,7 @@ public class Employee {
     private String email;
 
     @XmlElement(name = "active")
-    private Boolean active;
+    private String active;
 
     @XmlElement(name = "id_profile")
     private Integer idProfile;
@@ -58,7 +58,7 @@ public class Employee {
     private Integer boWidth;
 
     @XmlElement(name = "bo_menu")
-    private Boolean boMenu;
+    private String boMenu;
 
     @XmlElement(name = "stats_compare_option")
     private Integer statsCompareOption;
@@ -82,7 +82,7 @@ public class Employee {
     private String resetPasswordValidity;
 
     @XmlElement(name = "has_enabled_gravatar")
-    private Boolean hasEnabledGravatar;
+    private String hasEnabledGravatar;
 
     // === Getters and Setters ===
 
@@ -166,11 +166,11 @@ public class Employee {
         this.email = email;
     }
 
-    public Boolean getActive() {
+    public String getActive() {
         return active;
     }
 
-    public void setActive(Boolean active) {
+    public void setActive(String active) {
         this.active = active;
     }
 
@@ -222,11 +222,11 @@ public class Employee {
         this.boWidth = boWidth;
     }
 
-    public Boolean getBoMenu() {
+    public String getBoMenu() {
         return boMenu;
     }
 
-    public void setBoMenu(Boolean boMenu) {
+    public void setBoMenu(String boMenu) {
         this.boMenu = boMenu;
     }
 
@@ -286,11 +286,11 @@ public class Employee {
         this.resetPasswordValidity = resetPasswordValidity;
     }
 
-    public Boolean getHasEnabledGravatar() {
+    public String getHasEnabledGravatar() {
         return hasEnabledGravatar;
     }
 
-    public void setHasEnabledGravatar(Boolean hasEnabledGravatar) {
+    public void setHasEnabledGravatar(String hasEnabledGravatar) {
         this.hasEnabledGravatar = hasEnabledGravatar;
     }
 }

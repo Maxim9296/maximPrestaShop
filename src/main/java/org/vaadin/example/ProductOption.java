@@ -8,7 +8,7 @@ import java.util.List;
 public class ProductOption {
 
     @XmlElement(name = "is_color_group")
-    private Boolean isColorGroup;
+    private String isColorGroup;
 
     @XmlElement(name = "group_type", required = true)
     private String groupType;
@@ -29,11 +29,11 @@ public class ProductOption {
 
     // Getters e Setters
 
-    public Boolean getIsColorGroup() {
+    public String getIsColorGroup() {
         return isColorGroup;
     }
 
-    public void setIsColorGroup(Boolean isColorGroup) {
+    public void setIsColorGroup(String isColorGroup) {
         this.isColorGroup = isColorGroup;
     }
 

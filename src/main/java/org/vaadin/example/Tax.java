@@ -16,10 +16,10 @@ public class Tax {
     private Float rate;
 
     @XmlElement
-    private Boolean active;
+    private String active;
 
     @XmlElement
-    private Boolean deleted;
+    private String deleted;
 
     @XmlElement(required = true)
     private Language name;
@@ -34,19 +34,19 @@ public class Tax {
         this.rate = rate;
     }
 
-    public Boolean getActive() {
+    public String getActive() {
         return active;
     }
 
-    public void setActive(Boolean active) {
+    public void setActive(String active) {
         this.active = active;
     }
 
-    public Boolean getDeleted() {
+    public String getDeleted() {
         return deleted;
     }
 
-    public void setDeleted(Boolean deleted) {
+    public void setDeleted(String deleted) {
         this.deleted = deleted;
     }
 

@@ -13,19 +13,19 @@ public class ShopGroup {
     private String color;
 
     @XmlElement(name = "share_customer")
-    private boolean shareCustomer;
+    private String shareCustomer;
 
     @XmlElement(name = "share_order")
-    private boolean shareOrder;
+    private String shareOrder;
 
     @XmlElement(name = "share_stock")
-    private boolean shareStock;
+    private String shareStock;
 
     @XmlElement
-    private boolean active;
+    private String active;
 
     @XmlElement
-    private boolean deleted;
+    private String deleted;
 
     // ----- GETTER e SETTER -----
 
@@ -45,43 +45,43 @@ public class ShopGroup {
         this.color = color;
     }
 
-    public boolean isShareCustomer() {
+    public String isShareCustomer() {
         return shareCustomer;
     }
 
-    public void setShareCustomer(boolean shareCustomer) {
+    public void setShareCustomer(String shareCustomer) {
         this.shareCustomer = shareCustomer;
     }
 
-    public boolean isShareOrder() {
+    public String isShareOrder() {
         return shareOrder;
     }
 
-    public void setShareOrder(boolean shareOrder) {
+    public void setShareOrder(String shareOrder) {
         this.shareOrder = shareOrder;
     }
 
-    public boolean isShareStock() {
+    public String isShareStock() {
         return shareStock;
     }
 
-    public void setShareStock(boolean shareStock) {
+    public void setShareStock(String shareStock) {
         this.shareStock = shareStock;
     }
 
-    public boolean isActive() {
+    public String isActive() {
         return active;
     }
 
-    public void setActive(boolean active) {
+    public void setActive(String active) {
         this.active = active;
     }
 
-    public boolean isDeleted() {
+    public String isDeleted() {
         return deleted;
     }
 
-    public void setDeleted(boolean deleted) {
+    public void setDeleted(String deleted) {
         this.deleted = deleted;
     }
 }

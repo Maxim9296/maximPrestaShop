@@ -28,10 +28,10 @@ public class OrderCartRule {
     private BigDecimal valueTaxExcl;
 
     @XmlElement(name = "free_shipping")
-    private Boolean freeShipping;
+    private String freeShipping;
 
     @XmlElement(name = "deleted")
-    private Boolean deleted;
+    private String deleted;
 
     // === Getters and Setters ===
 
@@ -83,19 +83,19 @@ public class OrderCartRule {
         this.valueTaxExcl = valueTaxExcl;
     }
 
-    public Boolean getFreeShipping() {
+    public String getFreeShipping() {
         return freeShipping;
     }
 
-    public void setFreeShipping(Boolean freeShipping) {
+    public void setFreeShipping(String freeShipping) {
         this.freeShipping = freeShipping;
     }
 
-    public Boolean getDeleted() {
+    public String getDeleted() {
         return deleted;
     }
 
-    public void setDeleted(Boolean deleted) {
+    public void setDeleted(String deleted) {
         this.deleted = deleted;
     }
 }

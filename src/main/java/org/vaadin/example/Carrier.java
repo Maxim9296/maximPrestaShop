@@ -9,10 +9,10 @@ import javax.xml.bind.annotation.*;
 public class Carrier{
 
     @XmlElement(name = "deleted")
-    private Boolean deleted;
+    private String deleted;
 
     @XmlElement(name = "is_module")
-    private Boolean isModule;
+    private String isModule;
 
     @XmlElement(name = "id_tax_rules_group")
     private Long idTaxRulesGroup;
@@ -24,22 +24,22 @@ public class Carrier{
     private String name;
 
     @XmlElement(name = "active", required = true)
-    private Boolean active;
+    private String active;
 
     @XmlElement(name = "is_free")
-    private Boolean isFree;
+    private String isFree;
 
     @XmlElement(name = "url")
     private String url;
 
     @XmlElement(name = "shipping_handling")
-    private Boolean shippingHandling;
+    private String shippingHandling;
 
     @XmlElement(name = "shipping_external")
     private String shippingExternal;
 
     @XmlElement(name = "range_behavior")
-    private Boolean rangeBehavior;
+    private String rangeBehavior;
 
     @XmlElement(name = "shipping_method")
     private Integer shippingMethod;
@@ -74,19 +74,19 @@ public class Carrier{
 
     // Getter e Setter
 
-    public Boolean getDeleted() {
+    public String getDeleted() {
         return deleted;
     }
 
-    public void setDeleted(Boolean deleted) {
+    public void setDeleted(String deleted) {
         this.deleted = deleted;
     }
 
-    public Boolean getIsModule() {
+    public String getIsModule() {
         return isModule;
     }
 
-    public void setIsModule(Boolean isModule) {
+    public void setIsModule(String isModule) {
         this.isModule = isModule;
     }
 
@@ -114,19 +114,19 @@ public class Carrier{
         this.name = name;
     }
 
-    public Boolean getActive() {
+    public String getActive() {
         return active;
     }
 
-    public void setActive(Boolean active) {
+    public void setActive(String active) {
         this.active = active;
     }
 
-    public Boolean getIsFree() {
+    public String getIsFree() {
         return isFree;
     }
 
-    public void setIsFree(Boolean isFree) {
+    public void setIsFree(String isFree) {
         this.isFree = isFree;
     }
 
@@ -138,11 +138,11 @@ public class Carrier{
         this.url = url;
     }
 
-    public Boolean getShippingHandling() {
+    public String getShippingHandling() {
         return shippingHandling;
     }
 
-    public void setShippingHandling(Boolean shippingHandling) {
+    public void setShippingHandling(String shippingHandling) {
         this.shippingHandling = shippingHandling;
     }
 
@@ -154,11 +154,11 @@ public class Carrier{
         this.shippingExternal = shippingExternal;
     }
 
-    public Boolean getRangeBehavior() {
+    public String getRangeBehavior() {
         return rangeBehavior;
     }
 
-    public void setRangeBehavior(Boolean rangeBehavior) {
+    public void setRangeBehavior(String rangeBehavior) {
         this.rangeBehavior = rangeBehavior;
     }
 

@@ -32,7 +32,7 @@ public class SpecificPriceRule {
     private BigDecimal reduction;
 
     @XmlElement(name = "reduction_tax", required = true)
-    private boolean reductionTax;
+    private String reductionTax;
 
     @XmlElement(name = "reduction_type", required = true)
     private String reductionType;
@@ -109,11 +109,11 @@ public class SpecificPriceRule {
         this.reduction = reduction;
     }
 
-    public boolean isReductionTax() {
+    public String isReductionTax() {
         return reductionTax;
     }
 
-    public void setReductionTax(boolean reductionTax) {
+    public void setReductionTax(String reductionTax) {
         this.reductionTax = reductionTax;
     }
 

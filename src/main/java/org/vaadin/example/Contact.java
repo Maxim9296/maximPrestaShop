@@ -13,7 +13,7 @@ public class Contact {
     private String email;
 
     @XmlElement(name = "customer_service")
-    private Boolean customerService;
+    private String customerService;
 
     @XmlElementWrapper(name = "name")
     @XmlElement(name = "language")
@@ -33,11 +33,11 @@ public class Contact {
         this.email = email;
     }
 
-    public Boolean getCustomerService() {
+    public String getCustomerService() {
         return customerService;
     }
 
-    public void setCustomerService(Boolean customerService) {
+    public void setCustomerService(String customerService) {
         this.customerService = customerService;
     }
 

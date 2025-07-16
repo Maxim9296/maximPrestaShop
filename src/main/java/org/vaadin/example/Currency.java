@@ -33,16 +33,16 @@ public class Currency {
     private Double conversionRate;
 
     @XmlElement(name = "deleted")
-    private Boolean deleted;
+    private String deleted;
 
     @XmlElement(name = "active")
-    private Boolean active;
+    private String active;
 
     @XmlElement(name = "unofficial")
-    private Boolean unofficial;
+    private String unofficial;
 
     @XmlElement(name = "modified")
-    private Boolean modified;
+    private String modified;
 
     @XmlElementWrapper(name = "pattern")
     @XmlElement(name = "language")
@@ -106,35 +106,35 @@ public class Currency {
         this.conversionRate = conversionRate;
     }
 
-    public Boolean getDeleted() {
+    public String getDeleted() {
         return deleted;
     }
 
-    public void setDeleted(Boolean deleted) {
+    public void setDeleted(String deleted) {
         this.deleted = deleted;
     }
 
-    public Boolean getActive() {
+    public String getActive() {
         return active;
     }
 
-    public void setActive(Boolean active) {
+    public void setActive(String active) {
         this.active = active;
     }
 
-    public Boolean getUnofficial() {
+    public String getUnofficial() {
         return unofficial;
     }
 
-    public void setUnofficial(Boolean unofficial) {
+    public void setUnofficial(String unofficial) {
         this.unofficial = unofficial;
     }
 
-    public Boolean getModified() {
+    public String getModified() {
         return modified;
     }
 
-    public void setModified(Boolean modified) {
+    public void setModified(String modified) {
         this.modified = modified;
     }
 

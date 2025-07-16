@@ -15,7 +15,7 @@ public class Group {
     private Integer priceDisplayMethod;
 
     @XmlElement(name = "show_prices")
-    private Boolean showPrices;
+    private String showPrices;
 
     @XmlElement(name = "date_add")
     private String dateAdd;
@@ -45,11 +45,11 @@ public class Group {
         this.priceDisplayMethod = priceDisplayMethod;
     }
 
-    public Boolean getShowPrices() {
+    public String getShowPrices() {
         return showPrices;
     }
 
-    public void setShowPrices(Boolean showPrices) {
+    public void setShowPrices(String showPrices) {
         this.showPrices = showPrices;
     }
 

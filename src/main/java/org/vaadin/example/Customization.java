@@ -29,7 +29,7 @@ public class Customization {
     private Long quantityReturned;
 
     @XmlElement(name = "in_cart", required = true)
-    private Boolean inCart;
+    private String inCart;
 
     @XmlElement(name = "associations")
     private Associations associations;
@@ -92,11 +92,11 @@ public class Customization {
         this.quantityReturned = quantityReturned;
     }
 
-    public Boolean getInCart() {
+    public String getInCart() {
         return inCart;
     }
 
-    public void setInCart(Boolean inCart) {
+    public void setInCart(String inCart) {
         this.inCart = inCart;
     }
 

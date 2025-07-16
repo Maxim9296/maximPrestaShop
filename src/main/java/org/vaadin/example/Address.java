@@ -67,7 +67,7 @@ public class Address implements Serializable {
     private String dni;
 
     @XmlElement(name = "deleted")
-    private Boolean deleted;
+    private String deleted;
 
     @XmlElement(name = "date_add")
     private String dateAdd;
@@ -228,11 +228,11 @@ public class Address implements Serializable {
         this.dni = dni;
     }
 
-    public Boolean getDeleted() {
+    public String getDeleted() {
         return deleted;
     }
 
-    public void setDeleted(Boolean deleted) {
+    public void setDeleted(String deleted) {
         this.deleted = deleted;
     }
 

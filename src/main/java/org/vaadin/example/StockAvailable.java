@@ -22,7 +22,7 @@ public class StockAvailable {
     private Integer quantity;
 
     @XmlElement(name = "depends_on_stock", required = true)
-    private Boolean dependsOnStock;
+    private String dependsOnStock;
 
     @XmlElement(name = "out_of_stock", required = true)
     private Integer outOfStock;
@@ -72,11 +72,11 @@ public class StockAvailable {
         this.quantity = quantity;
     }
 
-    public Boolean getDependsOnStock() {
+    public String getDependsOnStock() {
         return dependsOnStock;
     }
 
-    public void setDependsOnStock(Boolean dependsOnStock) {
+    public void setDependsOnStock(String dependsOnStock) {
         this.dependsOnStock = dependsOnStock;
     }
 

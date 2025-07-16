@@ -11,7 +11,7 @@ public class StockMovementReason {
     private Integer sign;
 
     @XmlElement(name = "deleted")
-    private Boolean deleted;
+    private String deleted;
 
     @XmlElement(name = "date_add")
     private String dateAdd;
@@ -33,11 +33,11 @@ public class StockMovementReason {
         this.sign = sign;
     }
 
-    public Boolean getDeleted() {
+    public String getDeleted() {
         return deleted;
     }
 
-    public void setDeleted(Boolean deleted) {
+    public void setDeleted(String deleted) {
         this.deleted = deleted;
     }
 

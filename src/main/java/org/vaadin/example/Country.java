@@ -22,22 +22,22 @@ public class Country {
     private String isoCode;
 
     @XmlElement(name = "active")
-    private Boolean active;
+    private String active;
 
     @XmlElement(name = "contains_states")
-    private Boolean containsStates;
+    private String containsStates;
 
     @XmlElement(name = "need_identification_number")
-    private Boolean needIdentificationNumber;
+    private String needIdentificationNumber;
 
     @XmlElement(name = "need_zip_code")
-    private Boolean needZipCode;
+    private String needZipCode;
 
     @XmlElement(name = "zip_code_format")
     private String zipCodeFormat;
 
     @XmlElement(name = "display_tax_label")
-    private Boolean displayTaxLabel;
+    private String displayTaxLabel;
 
     @XmlElementWrapper(name = "name")
     @XmlElement(name = "language")
@@ -77,35 +77,35 @@ public class Country {
         this.isoCode = isoCode;
     }
 
-    public Boolean getActive() {
+    public String getActive() {
         return active;
     }
 
-    public void setActive(Boolean active) {
+    public void setActive(String active) {
         this.active = active;
     }
 
-    public Boolean getContainsStates() {
+    public String getContainsStates() {
         return containsStates;
     }
 
-    public void setContainsStates(Boolean containsStates) {
+    public void setContainsStates(String containsStates) {
         this.containsStates = containsStates;
     }
 
-    public Boolean getNeedIdentificationNumber() {
+    public String getNeedIdentificationNumber() {
         return needIdentificationNumber;
     }
 
-    public void setNeedIdentificationNumber(Boolean needIdentificationNumber) {
+    public void setNeedIdentificationNumber(String needIdentificationNumber) {
         this.needIdentificationNumber = needIdentificationNumber;
     }
 
-    public Boolean getNeedZipCode() {
+    public String getNeedZipCode() {
         return needZipCode;
     }
 
-    public void setNeedZipCode(Boolean needZipCode) {
+    public void setNeedZipCode(String needZipCode) {
         this.needZipCode = needZipCode;
     }
 
@@ -117,11 +117,11 @@ public class Country {
         this.zipCodeFormat = zipCodeFormat;
     }
 
-    public Boolean getDisplayTaxLabel() {
+    public String getDisplayTaxLabel() {
         return displayTaxLabel;
     }
 
-    public void setDisplayTaxLabel(Boolean displayTaxLabel) {
+    public void setDisplayTaxLabel(String displayTaxLabel) {
         this.displayTaxLabel = displayTaxLabel;
     }
 

@@ -19,7 +19,7 @@ public class State {
     private String name;
 
     @XmlElement
-    private Boolean active;
+    private String active;
 
     // -------- GETTER E SETTER --------
 
@@ -55,11 +55,11 @@ public class State {
         this.name = name;
     }
 
-    public Boolean getActive() {
+    public String getActive() {
         return active;
     }
 
-    public void setActive(Boolean active) {
+    public void setActive(String active) {
         this.active = active;
     }
 }

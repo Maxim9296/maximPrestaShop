@@ -47,7 +47,7 @@ public class Order {
     private String deliveryDate;
 
     @XmlElement(name = "valid")
-    private Boolean valid;
+    private String valid;
 
     @XmlElement(name = "date_add")
     private String dateAdd;
@@ -74,16 +74,16 @@ public class Order {
     private String payment;
 
     @XmlElement(name = "recyclable")
-    private Boolean recyclable;
+    private String recyclable;
 
     @XmlElement(name = "gift")
-    private Boolean gift;
+    private String gift;
 
     @XmlElement(name = "gift_message")
     private String giftMessage;
 
     @XmlElement(name = "mobile_theme")
-    private Boolean mobileTheme;
+    private String mobileTheme;
 
     @XmlElement(name = "total_discounts")
     private Double totalDiscounts;
@@ -254,11 +254,11 @@ public class Order {
         this.deliveryDate = deliveryDate;
     }
 
-    public Boolean getValid() {
+    public String getValid() {
         return valid;
     }
 
-    public void setValid(Boolean valid) {
+    public void setValid(String valid) {
         this.valid = valid;
     }
 
@@ -326,19 +326,19 @@ public class Order {
         this.payment = payment;
     }
 
-    public Boolean getRecyclable() {
+    public String getRecyclable() {
         return recyclable;
     }
 
-    public void setRecyclable(Boolean recyclable) {
+    public void setRecyclable(String recyclable) {
         this.recyclable = recyclable;
     }
 
-    public Boolean getGift() {
+    public String getGift() {
         return gift;
     }
 
-    public void setGift(Boolean gift) {
+    public void setGift(String gift) {
         this.gift = gift;
     }
 
@@ -350,11 +350,11 @@ public class Order {
         this.giftMessage = giftMessage;
     }
 
-    public Boolean getMobileTheme() {
+    public String getMobileTheme() {
         return mobileTheme;
     }
 
-    public void setMobileTheme(Boolean mobileTheme) {
+    public void setMobileTheme(String mobileTheme) {
         this.mobileTheme = mobileTheme;
     }
 

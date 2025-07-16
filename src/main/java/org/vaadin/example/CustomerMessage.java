@@ -30,7 +30,7 @@ public class CustomerMessage {
     private String userAgent;
 
     @XmlElement(name = "private")
-    private Boolean isPrivate;
+    private String isPrivate;
 
     @XmlElement(name = "date_add")
     private String dateAdd;
@@ -39,7 +39,7 @@ public class CustomerMessage {
     private String dateUpd;
 
     @XmlElement(name = "read")
-    private Boolean isRead;
+    private String isRead;
 
     // === Getters and Setters ===
 
@@ -99,11 +99,11 @@ public class CustomerMessage {
         this.userAgent = userAgent;
     }
 
-    public Boolean getIsPrivate() {
+    public String getIsPrivate() {
         return isPrivate;
     }
 
-    public void setIsPrivate(Boolean isPrivate) {
+    public void setIsPrivate(String isPrivate) {
         this.isPrivate = isPrivate;
     }
 
@@ -123,11 +123,11 @@ public class CustomerMessage {
         this.dateUpd = dateUpd;
     }
 
-    public Boolean getIsRead() {
+    public String getIsRead() {
         return isRead;
     }
 
-    public void setIsRead(Boolean isRead) {
+    public void setIsRead(String isRead) {
         this.isRead = isRead;
     }
 }
